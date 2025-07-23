@@ -1,5 +1,1 @@
-body {
-  background-image: url('/pro-moa/static/bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+background-image: url('/pro-moa/static/bg.jpg');
