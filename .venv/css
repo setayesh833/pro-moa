@@ -1,6 +1,4 @@
-body {
-  background-image: url('https://raw.githubusercontent.com/setayesh833/pro-moa/main/static/bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+background-image: url('https://raw.githubusercontent.com/setayesh833/pro-moa/main/static/bg.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
