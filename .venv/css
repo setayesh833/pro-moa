@@ -1,4 +1,5 @@
-background-image: url('https://raw.githubusercontent.com/setayesh833/pro-moa/main/static/bg.jpg');
+background-image: url("bg.jpg");
+
 background-size: cover;
 background-position: center;
 background-attachment: fixed;
