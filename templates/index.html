@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>ستایش صادقیان | مهندس کامپیوتر</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Vazir', Tahoma, sans-serif;
+            background-image: url("{{ url_for('static', filename='bg.jpg') }}");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.65);
+            min-height: 100vh;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 20px 0;
+            max-width: 700px;
+            width: 90%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        h1, h2 {
+            margin-bottom: 15px;
+        }
+
+        p, a, label {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #f0f0f0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #80dfff;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 10px;
+            font-family: inherit;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 50px;
+            color: #ccc;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="card">
+            <h1>سلام! من ستایش صادقیان هستم</h1>
+            <p>مهندس کامپیوتر و عاشق برنامه‌نویسی 💻  
+            این سایت رو ساختم تا پروژه‌هام، مهارت‌هام و مسیر رشدم رو با شما به اشتراک بذارم.</p>
+        </div>
+
+        <div class="card">
+            <h2>✨ جمله انگیزشی من</h2>
+            <p>«هر خط کدی که می‌نویسم، یه قدم به رویام نزدیک‌تر می‌شم.»</p>
+        </div>
+
+        <div class="card" id="contact">
+            <h2>📬 تماس با من</h2>
+            <ul>
+                <li>ایمیل: <a href="mailto:sadeghiansetayesh23@gmail.com">sadeghiansetayesh23@gmail.com</a></li>
+                <li>گیت‌هاب: <a href="#">github.com/yourusername</a></li>
+                <li>اینستاگرام: <a href="#">@your_instagram</a></li>
+            </ul>
+
+            <h3>📝 فرم تماس</h3>
+            <form>
+                <label for="name">نام:</label>
+                <input type="text" id="name" placeholder="نام شما">
+
+                <label for="message">پیام:</label>
+                <textarea id="message" rows="4" placeholder="پیام شما..."></textarea>
+
+                <button type="submit">ارسال</button>
+            </form>
+            <p style="font-size: 13px; color: #ccc;">* این فرم فعلاً فقط ظاهر دارد و به ایمیل متصل نیست</p>
+        </div>
+
+        <footer>
+            © 2025 | طراحی شده توسط ستایش صادقیان
+        </footer>
+    </div>
+</body>
+</html>
