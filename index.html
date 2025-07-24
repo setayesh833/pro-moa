@@ -8,7 +8,6 @@
             margin: 0;
             font-family: 'Vazir', Tahoma, sans-serif;
             background-image: url('/static/bg.jpg');
-
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -16,28 +15,33 @@
             overflow-x: hidden;
         }
         .overlay {
-            background-image: url('/static/bg.jpg');
-
             min-height: 100vh;
             padding: 50px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            background-color: rgba(0, 0, 0, 0.3); /* لایه محو برای کل صفحه */
         }
         .card {
             backdrop-filter: blur(10px);
-            background-image: url('/static/bg.jpg');
-
+            background-color: rgba(30, 30, 30, 0.6); /* خاکستری تیره با شفافیت */
             border-radius: 20px;
             padding: 30px;
             margin: 20px 0;
             max-width: 700px;
             width: 90%;
-            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
             text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            background-color: rgba(40, 40, 40, 0.7); /* تغییر هنگام هاور */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
         }
         h1, h2 {
             margin-bottom: 15px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
         p, a, label {
             font-size: 18px;
@@ -47,6 +51,10 @@
         a {
             text-decoration: none;
             color: #80dfff;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #40bfff;
         }
         ul {
             list-style: none;
@@ -54,12 +62,20 @@
         }
         input, textarea {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             margin-top: 5px;
             margin-bottom: 15px;
             border: none;
             border-radius: 10px;
             font-family: inherit;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 8px rgba(128, 223, 255, 0.4);
         }
         button {
             background-color: #4caf50;
@@ -69,16 +85,17 @@
             border-radius: 10px;
             cursor: pointer;
             font-size: 16px;
-            transition: background 0.3s ease;
+            transition: all 0.3s ease;
         }
         button:hover {
             background-color: #45a049;
+            transform: translateY(-2px);
         }
         footer {
             text-align: center;
             font-size: 14px;
             margin-top: 50px;
-            color: #ccc;
+            color: #aaa;
         }
         @media (max-width: 600px) {
             .card {
@@ -124,7 +141,7 @@
 
                 <button type="submit">ارسال</button>
             </form>
-            <p style="font-size: 13px; color: #ccc;">* این فرم فعلاً فقط ظاهر دارد و به ایمیل متصل نیست</p>
+            <p style="font-size: 13px; color: #aaa;">* این فرم فعلاً فقط ظاهر دارد و به ایمیل متصل نیست</p>
         </div>
 
         <footer>
